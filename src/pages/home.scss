@@ -1,0 +1,96 @@
+@media (max-width: 576px) {
+    .menubar {
+        display: none !important;
+    }
+}
+
+.title {
+    font-size: clamp(30px, 4vw, 54px);
+    color: var(--primary);
+    font-family: "Ultra",serif;
+    font-weight: 700;
+}
+.small-title {
+    font-size: 22px;
+    color: var(--primary);
+    font-family: "Ultra",serif;
+    text-decoration: none;
+    font-weight: 700;
+    
+    &:hover {
+        animation-name: color-change;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes color-change {
+        from {color: var(--primary);}
+        to {color: var(--primary-hover);}
+    }
+}
+.header-letter {
+    font-size: 18px;
+    color: var(--primary);
+    font-family: "Ultra",serif;
+    text-decoration: none;
+    
+    &:hover {
+        animation-name: color-change;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes color-change {
+        from {color: var(--primary);}
+        to {color: var(--primary-hover);}
+    }
+}
+.header-item {
+    color: var(--primary);
+    text-decoration: none;
+    margin: 0 10px;
+    &:hover {
+        color: var(--primary-hover);
+    }
+}
+.default-btn {
+    background-color: var(--primary);
+    color: white;
+    padding: 20px 45px;
+    border: 0;
+    border-radius: 3px;
+    font-size: 17px;
+    cursor: pointer;
+
+    &:hover {
+        animation-name: back-change;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes back-change {
+        from {background-color: var(--primary);}
+        to {background-color: var(--primary-hover);}
+    }
+}
+.main-padding{
+    padding: 0 60px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.item-margin{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+@media (max-width: 576px) {
+    .main-padding {
+        padding: 0 10px;
+    } 
+}
+pre {
+    font-size: 17px;
+    margin: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+.text-gray {
+    color: #b5b5b5;
+    font-size: 13px;
+}
